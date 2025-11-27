@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forge: Collectives – Reclaim Your Digital Realm</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <style>
+        body {margin:0;font-family:'Segoe UI',sans-serif;background:linear-gradient(135deg,#1e3a8a 0%,#0f172a 100%);color:#fff;line-height:1.8;}
+        .texture {background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23fbbf24' fill-opacity='0.06'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:-1;}
+        .hero {text-align:center;padding:120px 20px;max-width:900px;margin:0 auto;}
+        h1 {font-size:5rem;margin:0;background:linear-gradient(45deg,#fff,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+        .subtitle {font-size:1.8rem;margin:30px 0 60px;opacity:0.9;}
+        .manifesto {max-width:800px;margin:60px auto;padding:40px;background:rgba(255,255,255,0.08);border-radius:16px;text-align:left;font-size:1.12rem;}
+        .manifesto h3 {margin-top:2rem;font-size:1.6rem;color:#fbbf24;}
+        .cta {text-align:center;margin:100px 0;}
+        .cta h2 {font-size:3rem;margin-bottom:20px;}
+        .btn-glow {background:#fbbf24;color:#0f172a;border:none;padding:20px 50px;font-size:1.5rem;font-weight:bold;border-radius:60px;cursor:pointer;box-shadow:0 0 25px rgba(251,191,36,0.7);transition:all .3s;}
+        .btn-glow:hover {transform:scale(1.1);box-shadow:0 0 50px rgba(251,191,36,1);}
+        .form {max-width:500px;margin:100px auto;padding:30px;background:rgba(255,255,255,0.08);border-radius:16px;}
+        input {width:100%;padding:16px;margin:12px 0;border:none;border-radius:8px;font-size:1rem;}
+        button[type=submit] {background:#fbbf24;color:#0f172a;border:none;padding:16px;width:100%;border-radius:8px;font-size:1.2rem;box-shadow:0 0 20px rgba(251,191,36,0.6);cursor:pointer;transition:all .3s;}
+        button[type=submit]:hover {box-shadow:0 0 40px rgba(251,191,36,1);}
+        footer {text-align:center;padding:60px;opacity:0.7;}
+        @media(max-width:768px){h1{font-size:3.2rem;}.hero{padding:80px 15px;}.cta h2{font-size:2.3rem;}}
+    </style>
+</head>
+<body>
+    <div class="texture"></div>
+
+    <section class="hero">
+        <h1>Forge: Collectives</h1>
+        <p class="subtitle">Reclaim Your Digital Realm. Build Without Borders. Thrive Without Chains.</p>
+
+        <div class="manifesto">
+            <p>In 2025, your "private" group chat is a joke. Big Tech logs every keystroke, governments peek through backdoors, and one subpoena turns your inner circle into a crime scene. Discord? A toy for gamers, spied on by suits. Slack? Corporate spyware in sheep's clothing. Notion? A pretty notebook that sells your brain to the highest bidder. MySpace? Dead because it forgot creators own their worlds.</p>
+
+            <p>We started with a simple fire: unbreakable group rooms where friends, families, and outlaws could whisper without echoes. But fire spreads. Today, <strong>Forge: Collectives</strong> is the sovereign platform where any group—band, DAO, lab, neighborhood, or revolution—forges its future on <em>its</em> terms. No overlords. No leaks. Just pure, armored collaboration that scales from a bedroom jam session to a borderless empire.</p>
+
+            <h3>What It Is: The All-in-One Digital Forge</h3>
+            <ul>
+                <li><strong>Circles as Your Kingdom</strong>: Private or public "circles" (think Discord servers on steroids) with god-mode customization. End-to-end encrypted chats, file vaults, task boards, and AI co-pilots—all in one seamless app for phone, PC, or self-hosted server.</li>
+                <li><strong>Creator Mode</strong>: MySpace reborn. Build your profile as a living hub—posts, fan chats, merch stores, and subscription walls. Sell digital art, drop NFTs, or crowdfund your album without Patreon skimming 12%.</li>
+                <li><strong>Pro Tools for the Real World</strong>: Slack-level workflows + GitHub repos + Signal privacy + Notion docs. Run bots, host private models, or integrate wallets. Add stores for e-comm, or flip to P2P mode if the heat rises.</li>
+                <li><strong>Armor-Plated Privacy</strong>: Zero-knowledge everything. Warrant canaries that scream if we get touched. One-click "exile" exports to your own server. Built in Iceland/Switzerland—lawyers on retainer, not in your pocket.</li>
+            </ul>
+
+            <p>It's not an app. It's your uncensorable homeland. Free forever for basics. Pro tiers ($5–$99/mo) for the power users who fuel it. Marketplace for themes/plugins (we take 20%). Creators? 5% cut on your empire's earnings.</p>
+
+            <h3>Why Now? The World Is Fracturing—You're the Glue.</h3>
+            <p><strong>Surveillance Fatigue</strong>: Post-2024 elections, 78% of internet users want off the grid (Pew). But nothing scales without selling out.</p>
+            <p><strong>Creator Economy Boom</strong>: $250B market by 2027, but platforms like OnlyFans and Substack lock you in. Forge lets you own the keys.</p>
+            <p><strong>Decentralized Dawn</strong>: DAOs, web3 crews, and remote teams need a home that isn't AWS-dependent. We're the bridge from Web2 chaos to Web3 freedom.</p>
+            <p><strong>Our Edge</strong>: Born from the shadows—not Silicon Valley VC fluff. MVP in 6 months via Matrix fork. Alpha with 20 crews (one hacker cell, one indie label, one corp team). Facebook-scale potential? Hell yes—network effects + sovereignty = unstoppable.</p>
+
+            <h3>The Forge Oath: We Swear This</h3>
+            <ul>
+                <li><strong>Sovereignty First</strong>: Your data, your rules. We can't read it. No government can without nuking the planet.</li>
+                <li><strong>No Gods, No Masters</strong>: Open-source core. Self-host if you want. Dead-man's switch for threats (legally, of course).</li>
+                <li><strong>Collectives Win</strong>: 1% of users pay; 99% thrive free. Profits fund more armor, not yachts.</li>
+            </ul>
+
+            <p>We're not here to disrupt. We're here to <em>dismantle</em> the panopticon, one circle at a time. Join the forge. Build with us. Or watch from the ashes.</p>
+
+            <p><strong>Ready to ignite?</strong> DM for alpha access. Developers: Fork us on GitHub. Investors: $2M seed gets you in at the anvil. Lawyers: We need your steel.</p>
+
+            <p><em>Forged in fire. Unbreakable by design.</em><br>— The Collective<br>[forgecollectives.app] | [hello@forgecollectives.com] | Wyoming DAO + Swiss Foundation</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Join the Founding Circle</h2>
+        <p>Lifetime Pro access for $149 (normally $499) – Limited to first 200. Own your sovereign space forever.</p>
+        <button class="btn-glow" id="checkout-button">Claim Your Spot Now</button>
+    </section>
+
+    <section class="form">
+        <h3>Get Early Access Free</h3>
+        <form action="https://formspree.io/f/mbljwjwp" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="_replyto" placeholder="Your Email" required>
+            <button type="submit">Join Waitlist</button>
+        </form>
+    </section>
+
+    <footer>&copy; 2025 Forge Collectives. All rights reserved.</footer>
+
+    <script>
+        const stripe = Stripe('pk_test_51SXq9GCFR0kn1jZLMK6OPT721EUT7pFn3KowCzTnjpFGXqpiBBmfwXuzIhoCRkyj3Yf1r6RjEj4CEXD0I1w0BPuv00hOElCd9u');
+
+        document.getElementById('checkout-button').addEventListener('click', function () {
+            stripe.redirectToCheckout({
+                lineItems: [{price: 'price_1SXsAZCFR0kn1jZLVa9FoaKL', quantity: 1}],
+                mode: 'payment',
+                successUrl: window.location.href + '?success=true',
+                cancelUrl: window.location.href,
+            });
+        });
+    </script>
+</body>
+</html>
