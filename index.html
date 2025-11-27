@@ -90,7 +90,7 @@
 
         document.getElementById('checkout-button').addEventListener('click', function () {
             stripe.redirectToCheckout({
-                lineItems: [{price: 'prod_TUruOREyCFHSGC', quantity: 1}],
+                lineItems: [{price: 'price_1SXsAZCFR0kn1jZLVa9FoaKL', quantity: 1}],
                 mode: 'payment',
                 successUrl: window.location.href + '?success=true',
                 cancelUrl: window.location.href,
